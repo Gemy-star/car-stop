@@ -1,9 +1,9 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Backdrop, CircularProgress } from '@material-ui/core';
 import useStyles from './styles';
 import { useIntl } from 'react-intl';
-const Home = lazy(() =>  import('../Home/Home'));
+const Home = lazy(() =>  import('../Home'));
 
 
 const App = () => {
