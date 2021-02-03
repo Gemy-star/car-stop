@@ -3,8 +3,11 @@ import Header from '../../components/layouts/Header/index'
 import useStyles from "../../containers/Home/styles";
 import Background from "../../components/Background";
 import useTheme from '@material-ui/core/styles/useTheme'
-import {useMediaQuery} from '@material-ui/core';
+import {useMediaQuery , Typography} from '@material-ui/core';
 import HowItWorks from "../../components/HowItWorks";
+import Bidding from "../../components/Bidding";
+import Button from '@material-ui/core/Button';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const Index = () => {
     const classes = useStyles();
     const theme = useTheme();
@@ -14,9 +17,24 @@ const Index = () => {
       <div className={classes.sell_Car_container}>
           <Header />
           <Background/>
-          <div>
+          <div className={classes.start_div}>
+              <Button
+                  variant="contained"
+                  className={classes.start_btn}
+                  endIcon={<ExpandMoreIcon style={{color:'#ffffff'}}/>}
+              >
+                  <Typography className={classes.start_today}>
+                      Start Today
+                  </Typography>
+              </Button>
+          </div>
+          <div className={classes.wrap_div}>
+
               <div className={classes.mask}>
                    <HowItWorks/>
+              </div>
+              <div className={classes.red_div}>
+                      <Bidding/>
               </div>
           </div>
 
