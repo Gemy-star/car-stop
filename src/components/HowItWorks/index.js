@@ -60,7 +60,6 @@ const HowItWorks = () => {
             </Typography>
 
                                 </span>
-                            <Typography ></Typography>
                         </ListItemIcon>
                         <ListItemText
                             primary={<Typography className={classes.submit_car}>{"Get Your Payment"}</Typography>}

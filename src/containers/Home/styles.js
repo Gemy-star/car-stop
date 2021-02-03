@@ -11,6 +11,8 @@ sell_Car_container: {
         width: '100%',
         height: '6196px',
         padding: '50px 0 100px',
+        backgroundColor:' #ffffff',
+
     },
 },
     mask:{
