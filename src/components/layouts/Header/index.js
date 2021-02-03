@@ -5,7 +5,6 @@ import {ReactComponent as LOGO} from '../../../assets/logos/logo.svg';
 
 import {
     Button,
-    Divider,
     useMediaQuery,
 } from '@material-ui/core';
 
