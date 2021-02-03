@@ -17,18 +17,19 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.down('lg')]: {
             backgroundImage: `url(${bg_2x})`,
 },
-[theme.breakpoints.down('xs')]: {
-    backgroundImage: `url(${bg_2x})`,
-    width: '100%',
-    height: '15%',
-    margin: '0 0 23px',
-    padding: '126px 171px 59px 0px',
-    objectFit: 'contain',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    display: 'flex',
-},
+        [theme.breakpoints.down('xs')]: {
+            backgroundImage: `url(${bg})`,
+            width: '105%',
+            height: '5%',
+            margin: '0 0 23px',
+            padding: '126px 171px 59px 0px',
+            objectFit: 'contain',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+        },
+
     },
     selling_car:{
         width:' 389px',

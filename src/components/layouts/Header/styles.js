@@ -1,5 +1,4 @@
 import {makeStyles} from '@material-ui/core/styles';
-import bg_2x from "../../../assets/backgrounds/header-bg@2x.png";
 
 export default makeStyles((theme) => ({
     logo: {
@@ -7,15 +6,12 @@ export default makeStyles((theme) => ({
         height: '75px',
         margin: '0 280px 30px 140px',
         objectFit: 'contain',
-        marginTop: '30px',
         [theme.breakpoints.down('xs')]: {
-            width: '154px',
-            height: '75px',
             marginLeft: '20px',
-            // marginTop:'50px',
+            width: '163px',
+            height: '73px',
             marginBottom: '-66px',
             marginRight: '390px',
-            marginTop: '4px',
             objectFit: 'contain',
         },
     },
