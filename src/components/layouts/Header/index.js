@@ -14,7 +14,7 @@ const Header =() => {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
    return(
-        <div>
+        <div className={classes.header_div}>
            <span>
             <LOGO className={classes.logo}/>
            </span>

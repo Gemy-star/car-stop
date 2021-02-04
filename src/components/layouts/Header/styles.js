@@ -1,41 +1,40 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+    header_div:{
+      width: '100%',
+      height: '14vh',
+      display:'flex',
+        justifyContent:'space-between',
+paddingRight: '12%',
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            height: '22vh',
+
+        },
+    },
     logo: {
         width: '300px',
         height: '75px',
-        margin: '0 280px 30px 140px',
+        margin: '7px 142px -24px 122px',
         objectFit: 'contain',
         [theme.breakpoints.down('xs')]: {
-            width: '167px',
-            height: '75px',
-            margin:' 6px 119px -67px 15px',
-            objectFit: 'contain',
+
         },
     },
     bg: {
         width: '108px',
         height: '48px',
-        padding: '16px 30px',
-        marginRight: '140px',
-        marginTop: '48px',
-        marginLeft: '1192px',
         borderRadius: '5px',
         backgroundColor: '#ec1c24',
-        bottom: '138px',
+        marginTop: '4vh',
         '&:hover': {
             backgroundColor: '#ec1c24',
         },
         [theme.breakpoints.down('xs')]: {
             width: '108px',
             height: '48px',
-            padding: '16px 30px',
-            marginRight: '140px',
-            marginTop: '48px',
-            marginLeft: '1192px',
-            borderRadius: '5px',
             backgroundColor: '#ec1c24',
-            bottom: '138px',
         },
     },
     bgTxt: {
@@ -48,7 +47,8 @@ export default makeStyles((theme) => ({
         fontStyle: 'normal',
         lineHeight: '1',
         letterSpacing: 'normal',
-        color: '#ffffff'
+        color: '#ffffff',
+
     },
 
 

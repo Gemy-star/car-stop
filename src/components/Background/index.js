@@ -13,7 +13,7 @@ const Background = () =>  {
 
     return(
       <div className={classes.header_bg}>
-        <span>
+        <span className={isSmallScreen ? classes.selling_car_mob : null}>
               <Typography className={classes.selling_car}>
               {"Selling Your Car Now".toUpperCase()}
           </Typography>
