@@ -19,27 +19,10 @@ export default function Layout() {
             setPageLang('ar');
         }
     }, [intl.locale]);
-
-    const upTo1280 = useMediaQuery('(min-width:1280px)');
-    const upTo960 = useMediaQuery('(min-width:960px)');
-    const upTo600 = useMediaQuery('(min-width:600px)');
-    const multiplier = upTo1280 ? 0.5 : upTo960 ? 0.4 : upTo600 ? 0.3 : 0.2;
-
-    const nestedTheme = createMuiTheme({
-        ...theme,
-        typography: {
-            ...typographyTheme,
-            fontFamily: pageLang === 'en' ? 'DINNextRoundedLTPro' : 'Almarai',
-        },
-
-        spacing: (factor) => `${parseFloat(multiplier * factor).toPrecision(2)}rem`,
-    });
     return (
-        <ThemeProvider theme={nestedTheme}>
             <BrowserRouter>
                 <CssBaseline />
                 <App />
             </BrowserRouter>
-        </ThemeProvider>
     );
 }

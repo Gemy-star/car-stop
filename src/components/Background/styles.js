@@ -6,8 +6,7 @@ export default makeStyles((theme) => ({
     header_bg:{
         backgroundImage : `url(${bg})`,
         width: '100%',
-        height: '594px',
-        marginTop:'-96px;',
+        height: '79vh',
         padding: '430px 525px 75px 526px',
         objectFit: 'contain',
         backgroundPosition: 'center',
@@ -22,7 +21,6 @@ export default makeStyles((theme) => ({
             width: '105%',
             height: '5%',
             margin: '0 0 23px',
-            padding: '126px 171px 59px 0px',
             objectFit: 'contain',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -68,6 +66,9 @@ color: '#ffffff'
     easier_span_mob:{
         position: 'absolute',
         display: 'flex',
+        top: '77%',
+        right:' -94%',
+        marginTop: '-5%'
 
     },
     easier_ever:{
@@ -98,6 +99,12 @@ color: '#ffffff'
             textAlign: 'center',
             color: '#ffffff'
         },
+    },
+    selling_car_mob:{
+        position: 'absolute',
+        top: '73%',
+        right: '-94%',
+        alignItems:'center'
     }
 
 }))

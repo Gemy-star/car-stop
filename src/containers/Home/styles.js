@@ -5,13 +5,12 @@ import red_bg_2x from '../../assets/backgrounds/red-bg@2x.png';
 export default makeStyles((theme) => ({
     sell_Car_container: {
         width: '100%',
-        height: '4455px',
+        height: '591vh',
         padding: '30px 0 100px',
         backgroundColor: ' #ffffff',
         [theme.breakpoints.down('xs')]: {
             width: '100%',
-            height: '6196px',
-            padding: '50px 0 100px',
+            height: '822vh',
             backgroundColor: ' #ffffff',
 
         },
@@ -20,7 +19,13 @@ export default makeStyles((theme) => ({
         display: 'flex',
         position: 'absolute',
         right: '45%',
-        top: '95%'
+        top: '95%',
+        [theme.breakpoints.down('xs')]: {
+            display: 'flex',
+            position: 'absolute',
+            right: '-59%',
+            top: '100%',
+        },
     },
     start_today: {
         width: '83px',
@@ -37,7 +42,12 @@ export default makeStyles((theme) => ({
         whiteSpace: 'nowrap'
     },
     wrap_div: {
-        display: "flex"
+        display: "flex",
+        [theme.breakpoints.down('xs')]: {
+            display: "block",
+            height: '132vh',
+            width: '100%',
+        },
     },
     start_btn: {
         width: '147px',
