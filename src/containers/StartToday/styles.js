@@ -6,6 +6,18 @@ export default makeStyles((theme) => ({
         height: '171vh',
         display: 'flex',
     },
+    sellvideo_div: {
+      display:'flex',
+      position:'absolute',
+      marginTop: '15%',
+right: '57%',
+        [theme.breakpoints.down('xs')]: {
+            display: 'block',
+            height: '12vh',
+            marginTop: '46%',
+            left: '64%',
+        },
+    },
     start_div: {
       width:'400px',
       height:'11vh',

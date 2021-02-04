@@ -20,7 +20,6 @@ const Index = () => {
           <Background/>
           <div className={classes.start_div}>
               <Button
-                  variant="contained"
                   className={classes.start_btn}
                   endIcon={<ExpandMoreIcon style={{color:'#ffffff'}}/>}
               >
