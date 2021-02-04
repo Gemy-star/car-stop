@@ -9,7 +9,7 @@ export default makeStyles((theme) => ({
         padding: '30px 0 100px',
         backgroundColor: ' #ffffff',
         [theme.breakpoints.down('xs')]: {
-            width: '100%',
+            width: ' 292%',
             height: '822vh',
             backgroundColor: ' #ffffff',
 
@@ -23,8 +23,8 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             display: 'flex',
             position: 'absolute',
-            right: '-59%',
-            top: '100%',
+            right: '-60%',
+            top: '95%',
         },
     },
     start_today: {
@@ -62,6 +62,12 @@ export default makeStyles((theme) => ({
         height: '703px',
         padding: '150px 79px 150px 140px',
         backgroundColor: '#323e47',
+        [theme.breakpoints.down('xs')]: {
+            display: "block",
+            width: '100%',
+            height: '83vh',
+            padding: '123px 119px 100px 120px',
+        },
 
     },
     red_div: {
@@ -73,6 +79,11 @@ export default makeStyles((theme) => ({
         objectFit: 'contain',
         [theme.breakpoints.down('lg')]: {
             backgroundImage: `url(${red_bg_2x})`,
+        },
+        [theme.breakpoints.down('xs')]: {
+            display: "block",
+            width: '100%',
+            height: '49vh',
         },
     }
 }))

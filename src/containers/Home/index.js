@@ -28,15 +28,28 @@ const Index = () => {
                   </Typography>
               </Button>
           </div>
-          <div className={classes.wrap_div}>
+          {isSmallScreen ?
+            <div>
+                <div className={classes.mask}>
+                    <HowItWorks/>
+                </div>
+                <div className={classes.red_div}>
+                    <Bidding/>
+                </div>
+            </div>
+              :
 
-              <div className={classes.mask}>
-                   <HowItWorks/>
-              </div>
-              <div className={classes.red_div}>
+              <div className={classes.wrap_div}>
+
+                  <div className={classes.mask}>
+                      <HowItWorks/>
+                  </div>
+                  <div className={classes.red_div}>
                       <Bidding/>
+                  </div>
               </div>
-          </div>
+
+          }
 
       </div>
     )

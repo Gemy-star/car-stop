@@ -20,7 +20,6 @@ export default makeStyles((theme) => ({
             backgroundImage: `url(${bg})`,
             width: '105%',
             height: '5%',
-            margin: '0 0 23px',
             objectFit: 'contain',
             backgroundPosition: 'center',
             backgroundSize: 'cover',

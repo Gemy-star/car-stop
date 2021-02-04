@@ -7,7 +7,18 @@ bid_ic:{
     height: '60px',
     margin: '0 231px 30px',
     objectFit: 'contain',
+    [theme.breakpoints.down('xs')]: {
+        width: '100%',
+        height: '8vh',
+        margin: '0 231px 30px',
+        objectFit: 'contain',
+    },
 },
+    bid_mob:{
+        position: 'absolute',
+        top: '201%',
+        right: '-111%'
+    },
     your_Car:{
         width:' 495px',
         height: '39px',

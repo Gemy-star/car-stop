@@ -10,7 +10,7 @@ const Bidding = () => {
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
 
     return(
-       <div>
+       <div className={isSmallScreen ? classes.bid_mob : null}>
            <div className={classes.bid_ic}>
                <img src={bidIcon}  />
            </div>

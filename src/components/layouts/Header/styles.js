@@ -35,7 +35,6 @@ paddingRight: '12%',
             width: '108px',
             height: '48px',
             backgroundColor: '#ec1c24',
-            left: '253%',
         },
     },
     bgTxt: {
