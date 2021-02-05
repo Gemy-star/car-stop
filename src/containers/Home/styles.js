@@ -64,7 +64,7 @@ export default makeStyles((theme) => ({
         backgroundColor: '#323e47',
         [theme.breakpoints.down('xs')]: {
             display: "block",
-            width: '100%',
+            width: '124%',
             height: '83vh',
             padding: '123px 119px 100px 120px',
         },
@@ -82,7 +82,7 @@ export default makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             display: "block",
-            width: '100%',
+            width: '124%',
             height: '49vh',
         },
     }

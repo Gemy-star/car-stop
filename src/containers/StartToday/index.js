@@ -2,6 +2,7 @@ import React from 'react';
 import useStyles from './styles';
 import useTheme from '@material-ui/core/styles/useTheme'
 import {useMediaQuery , Typography} from '@material-ui/core';
+import SellVideo from "../../components/SellVideo";
 
 
 
@@ -20,7 +21,10 @@ const StartToday = props =>   {
                         {"You are just one click away from selling your car."}
                     </Typography>
                 </div>
+            <div className={classes.sellvideo_div}>
+                <SellVideo/>
+            </div>
         </div>
-    )
+    );
 }
 export default StartToday;
