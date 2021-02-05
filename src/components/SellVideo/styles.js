@@ -13,7 +13,12 @@ fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.58px',
 color: '#000000',
-    marginTop: '6%'
+    marginTop: '6%',
+    [theme.breakpoints.down('xs')]: {
+        margin: ' 0 28px 10px',
+
+    },
+
 },
 support_you:{
     width:'272px',
@@ -26,7 +31,12 @@ fontStretch: 'normal',
 fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.37px',
-color: '#595f6f'
+color: '#595f6f',
+    [theme.breakpoints.down('xs')]: {
+    margin: '10px 117px 30px 116px',
+
+},
+
 },
     startdiv:{
     textAlign:'center',
@@ -49,7 +59,12 @@ fontStretch: 'normal',
 fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.33px',
-color: '#595f6f'
+color: '#595f6f',
+        [theme.breakpoints.down('xs')]: {
+            margin: '0 0 20px',
+            textAlign:'center',
+        },
+
     },
     ready_sell:{
         width: '154px',
@@ -63,5 +78,9 @@ fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.33px',
 color:'#595f6f'
+        ,
+        [theme.breakpoints.down('xs')]: {
+            margin: '20px 176px 0 175px',
+        },
     },
 }));

@@ -28,7 +28,7 @@ const SellVideo = props =>   {
           <Typography className={classes.we_have}>
               {"We have streamlined the process to sell your car online for quick payment to get your free cash offer."}
           </Typography>
-          <Typography className={classes.we_have}>
+          <Typography className={classes.ready_sell}>
               {"Ready to sell your car?"}
           </Typography>
       </div>
