@@ -114,6 +114,26 @@ bg_error:{
 border: 'solid 1px #ec1c24',
 backgroundColor: 'rgba(236, 28, 36, 0.04)',
 },
+    err_banner:{
+        width: '460px',
+        height: '30px',
+        padding: '6px 20px 5px 283px',
+        borderRadius: '5px',
+backgroundColor: '#ec1c24'
+    },
+
+    banner_txt:{
+        width: '157px',
+        height: '19px',
+        fontFamily: 'Roboto',
+fontSize: '14px',
+fontWeight: 'normal',
+fontStretch: 'normal',
+fontStyle: 'normal',
+lineHeight: 'normal',
+letterSpacing: 'normal',
+color: '#ffffff'
+    },
     bg_button:{
         width: '203px',
         height: '50px',
