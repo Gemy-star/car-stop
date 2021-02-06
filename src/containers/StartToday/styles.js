@@ -6,7 +6,7 @@ export default makeStyles((theme) => ({
         height: '171vh',
         display: 'flex',
         position: 'absolute',
-        top: '183%',
+        top: '192%',
         [theme.breakpoints.down('xs')]: {
             top:'180%'
         },
