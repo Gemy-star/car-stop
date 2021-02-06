@@ -5,13 +5,16 @@ import reportWebVitals from './reportWebVitals';
 import Layout from "./containers/Layout/Layout";
 import { LocalizationProvider } from './context/LocalizationContext';
 import {CarsProvider} from "./context/CarContext";
+import {FormProvider} from "./context/FormContext";
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
           <LocalizationProvider>
               <CarsProvider>
-                  <Layout />
+                  <FormProvider>
+                      <Layout />
+                  </FormProvider>
               </CarsProvider>
           </LocalizationProvider>
       </BrowserRouter>
