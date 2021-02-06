@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Layout from "./containers/Layout/Layout";
 import { LocalizationProvider } from './context/LocalizationContext';
+import {CarsProvider} from "./context/CarContext";
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
           <LocalizationProvider>
-              <Layout />
+              <CarsProvider>
+                  <Layout />
+              </CarsProvider>
           </LocalizationProvider>
       </BrowserRouter>
   </React.StrictMode>,

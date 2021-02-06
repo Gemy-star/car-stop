@@ -5,19 +5,20 @@ import {useMediaQuery , Typography} from '@material-ui/core';
 import VideoPlayer from 'react-simple-video-player';
 import Back from  '../../assets/backgrounds/red-luxury-sedan-road.jpg';
 import EA from '../../assets/Emirates Auction - We Can Reach You Anywhere.mp4';
-
+import PlayIcon from '../../assets/icons/play-icon.svg'
 const SellVideo = props =>   {
     const classes = useStyles();
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
     return (
-      <div>
+      <div className={classes.video}>
           <VideoPlayer
               aspectRatio="4:3"
               url={EA}
               poster={Back}
               width={560}
               height={330}
+              playIcon={<div className={classes.play_circle}><PlayIcon className={classes.play}/></div>}
           />
           <Typography className={classes.should_Sell}>
               {"Why you should sell your car with us?"}

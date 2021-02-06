@@ -16,8 +16,8 @@ bid_ic:{
 },
     bid_mob:{
         position: 'absolute',
-        top: '201%',
-        right: '-111%'
+        top: '62%',
+        right: '17%',
     },
     your_Car:{
         width:' 495px',

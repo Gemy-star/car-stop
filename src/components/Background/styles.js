@@ -4,6 +4,8 @@ import bg_2x from '../../assets/backgrounds/header-bg@2x.png';
 
 export default makeStyles((theme) => ({
     header_bg:{
+        top: '18%',
+        position: 'absolute',
         backgroundImage : `url(${bg})`,
         width: '100%',
         height: '79vh',
@@ -25,6 +27,8 @@ export default makeStyles((theme) => ({
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             display: 'flex',
+            margin: '0 0 23px',
+            padding: '146%',
         },
 
     },
@@ -46,7 +50,7 @@ color:' #ffffff',
             height: '46px',
             margin:' 0 0 10px',
             fontFamily: 'Roboto',
-fontSize: '17px',
+fontSize: '35px',
 fontWeight: 'bold',
 fontStretch: 'normal',
 fontStyle: 'normal',
@@ -65,9 +69,9 @@ color: '#ffffff'
     easier_span_mob:{
         position: 'absolute',
         display: 'flex',
-        top: '77%',
-        right:' -94%',
-        marginTop: '-5%'
+        top: '90%',
+        right:'31%',
+        marginTop: '-6%',
 
     },
     easier_ever:{
@@ -85,7 +89,7 @@ textAlign: 'center',
 color: '#ffffff'
         ,
         [theme.breakpoints.down('xs')]: {
-            fontSize: '14px',
+            fontSize: '25px',
             width:' 250px',
             height: '33px',
             margin: '26px 76px 0 72px',
@@ -101,8 +105,8 @@ color: '#ffffff'
     },
     selling_car_mob:{
         position: 'absolute',
-        top: '73%',
-        right: '-94%',
+        top: '80%',
+        right: '32%',
         alignItems:'center'
     }
 

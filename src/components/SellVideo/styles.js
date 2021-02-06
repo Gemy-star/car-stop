@@ -48,6 +48,27 @@ color: '#595f6f',
         },
 
     },
+    video:{
+        width: '55%',
+        display: 'inline-block',
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            display:'block',
+        },
+    },
+    play:{
+        width: '15px',
+        height: '16px',
+        objectFit: 'contain'
+    },
+    play_circle:{
+        width: '50px',
+        height: '50px',
+        padding: '17px 17px 17px 18px',
+        borderRadius: '67px',
+boxShadow: '20px 20px 60px 0 rgba(0, 0, 0, 0.4)',
+backgroundColor: '#ec1c24',
+    },
     we_have:{
         width: '505px',
         height: '42px',

@@ -3,6 +3,7 @@ import useStyles from './styles';
 import useTheme from '@material-ui/core/styles/useTheme'
 import {useMediaQuery , Typography} from '@material-ui/core';
 import SellVideo from "../../components/SellVideo";
+import CarDetailsForm from "../../components/CarDetailsForm";
 
 
 
@@ -23,6 +24,7 @@ const StartToday = props =>   {
                 </div>
             <div className={classes.sellvideo_div}>
                 <SellVideo/>
+                <CarDetailsForm/>
             </div>
         </div>
     );
