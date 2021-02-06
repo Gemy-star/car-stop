@@ -3,7 +3,7 @@ import Header from '../../components/layouts/Header/index'
 import useStyles from "../../containers/Home/styles";
 import Background from "../../components/Background";
 import useTheme from '@material-ui/core/styles/useTheme'
-import {useMediaQuery , Typography} from '@material-ui/core';
+import {useMediaQuery , Typography , Grid} from '@material-ui/core';
 import HowItWorks from "../../components/HowItWorks";
 import Bidding from "../../components/Bidding";
 import Button from '@material-ui/core/Button';
@@ -15,7 +15,7 @@ const Index = () => {
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
 
     return (
-      <div className={classes.sell_Car_container}>
+      <Grid container className={classes.sell_Car_container}>
           <Header />
           <Background/>
           <div className={classes.start_div}>
@@ -29,7 +29,7 @@ const Index = () => {
               </Button>
           </div>
           {isSmallScreen ?
-            <div>
+            <div className={classes.mob}>
                 <div className={classes.mask}>
                     <HowItWorks/>
                 </div>
@@ -51,7 +51,7 @@ const Index = () => {
 
           }
 <StartToday/>
-      </div>
+      </Grid>
     )
 }
 

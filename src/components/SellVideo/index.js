@@ -11,7 +11,7 @@ const SellVideo = props =>   {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
     return (
-      <div>
+      <div className={classes.video}>
           <VideoPlayer
               aspectRatio="4:3"
               url={EA}

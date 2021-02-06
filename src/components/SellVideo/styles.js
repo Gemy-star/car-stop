@@ -48,6 +48,14 @@ color: '#595f6f',
         },
 
     },
+    video:{
+        width: '55%',
+        display: 'inline-block',
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            display:'block',
+        },
+    },
     we_have:{
         width: '505px',
         height: '42px',
