@@ -125,6 +125,10 @@ backgroundColor: '#ec1c24',
         '&:hover': {
             backgroundColor: '#ec1c24',
         },
+        [theme.breakpoints.down('xs')]: {
+            margin:'50px 128px 0 129px',
+
+        },
     },
     phone:{
         width: '174px',
