@@ -28,7 +28,7 @@ export default makeStyles((theme) => ({
             backgroundRepeat: 'no-repeat',
             display: 'flex',
             margin: '0 0 23px',
-            padding: '146%',
+            padding: '155%',
         },
 
     },

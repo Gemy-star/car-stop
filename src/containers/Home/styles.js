@@ -9,7 +9,7 @@ export default makeStyles((theme) => ({
         padding: '30px 0 100px',
         backgroundColor: ' #ffffff',
         [theme.breakpoints.down('xs')]: {
-            width: ' 292%',
+            width: ' 313%',
             height: '822vh',
             backgroundColor: ' #ffffff',
 
@@ -37,7 +37,7 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             display: 'flex',
             position: 'absolute',
-            right: '-60%',
+            right: '-79%',
             top: '165%',
             zIndex: '10',
         },

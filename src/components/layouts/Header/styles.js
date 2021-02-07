@@ -10,6 +10,7 @@ paddingRight: '12%',
         [theme.breakpoints.down('xs')]: {
             width: '100%',
             height: '22vh',
+            paddingRight: '0',
 
         },
     },
