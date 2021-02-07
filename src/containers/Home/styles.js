@@ -30,7 +30,7 @@ export default makeStyles((theme) => ({
     start_div: {
         display: 'flex',
         position: 'absolute',
-        right: '50%',
+        right: '48%',
         top: '95%',
         overflow: 'revert',
         zIndex: '10',

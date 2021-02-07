@@ -27,7 +27,7 @@ return (
         </Typography>
         <Button
             className={props.error? classes.try_btn  : classes.send_another_btn}
-            endIcon={<ArrowForwardIosIcon className={ props.error? classes.again_arrow  : classes.classes.whiteArrow } style={{color:'#ffffff'}}/>}
+            endIcon={<ArrowForwardIosIcon className={ props.error? classes.again_arrow  : classes.whiteArrow } style={{color:'#ffffff'}}/>}
         >
             <Typography className={props.error? classes.try_txt : classes.send_another_txt}>
                 {props.error? "Try Again"  : "Send another Inquiry"}

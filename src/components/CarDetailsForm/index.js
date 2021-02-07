@@ -6,6 +6,7 @@ import {CarContext} from "../../context/CarContext";
 import FormControl from '@material-ui/core/FormControl';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import {FormContext} from "../../context/FormContext";
+import {postCarRequest} from "../../api/carsDetails";
 
 const CarDetailsForm = props => {
     const classes = useStyles();
@@ -20,8 +21,7 @@ const CarDetailsForm = props => {
     const [phone , setPhone] = useState(null);
     const [name , setName] = useState(null);
     const [formIsValid , setFormIsValid] = useState(true);
-    const sent = useContext(FormContext)
-
+    const [sent , handleSent] = useContext(FormContext)
     useEffect(() =>  {
         const keys = [];
         cars?.map((c) =>  {
@@ -30,6 +30,7 @@ const CarDetailsForm = props => {
         setMakers(keys)
         console.log("Makers",makers)
     },[cars])
+const sendRequest = (value) =>  handleSent(value);
 
     const errorMessage = msg =>   {
         return (
@@ -51,8 +52,8 @@ const CarDetailsForm = props => {
     };
     const handleChangeModel = event =>  {
         const model_item = event.target.value;
-        !model_item ? setError({...error , model:true}):setError({...error , model:false})
         setItem(model_item);
+        !model_item ? setError({...error , model:true}):setError({...error , model:false})
         console.log("ITEM",item)
     };
     useEffect(()=> {
@@ -65,23 +66,33 @@ const CarDetailsForm = props => {
        console.log(error);
        if(error.fullName ===   false &&  error.phone ===   false &&  error.maker ===    false &&  error.model ===  false ) {
         setFormIsValid(true);
-        sent[1](true);
+           handlePostRequest({Make:maker , Model:item , PhoneNumber:phone, FullName:name})
         console.log("FORM" , [phone,item, maker , name]);
     }else {
         setFormIsValid(false);
     }
    };
+   const handlePostRequest = (body) => {
+      postCarRequest(body).then((res) => {
+          console.log("RES",res)
+         sendRequest(true);
+
+      }, error => {
+          console.log(error);
+         sendRequest(false);
+
+      })
+   };
     const handleChangeFullName = event =>  {
         const fullName = event.target.value;
-        fullName=== "" ? setError({...error , fullName:true}):setError({...error , fullName:false})
+        fullName=== "" ||   fullName===   null ||  /^\d+$/.test(fullName)? setError({...error , fullName:true}):setError({...error , fullName:false})
         setName(fullName);
-        console.log("fullName",fullName)
     };
     const handleChangePhone = event =>  {
         const num = event.target.value;
-        num=== "" ? setError({...error , phone:true}):setError({...error , phone:false})
+
+        num=== "" || num ===   null ? setError({...error , phone:true}):setError({...error , phone:false})
         setPhone(num);
-        console.log("Phone",num)
     };
     return (
         <div className={classes.form_Div}>
