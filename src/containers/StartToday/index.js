@@ -12,9 +12,7 @@ import FormComplete from "../../components/FormComplete";
 const StartToday = props =>   {
     const classes = useStyles();
     const theme = useTheme();
-    const sent = useContext(FormContext)
-
-    console.log("SENT",sent)
+    const [sent , handleSent] = useContext(FormContext)
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
     return (
         <div className={classes.start_today}>
@@ -29,7 +27,7 @@ const StartToday = props =>   {
                 </div>
             <div className={classes.sellvideo_div}>
                 <SellVideo/>
-                {sent[0]?.sent ===   null ? <CarDetailsForm/> :<FormComplete error={true}/>}
+                {sent ===   null ? <CarDetailsForm/> :<FormComplete error={sent ===   true ?  false : true}/>}
             </div>
         </div>
     );
