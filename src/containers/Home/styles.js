@@ -12,7 +12,6 @@ export default makeStyles((theme) => ({
             width: ' 313%',
             height: '822vh',
             backgroundColor: ' #ffffff',
-
         },
         [theme.breakpoints.down('sm')]: {
             width: ' 292%',
