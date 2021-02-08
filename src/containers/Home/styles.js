@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
         backgroundColor: ' #ffffff',
         [theme.breakpoints.down('xs')]: {
             width: ' 313%',
-            height: '822vh',
+            height: '870vh',
             backgroundColor: ' #ffffff',
         },
         [theme.breakpoints.down('sm')]: {
