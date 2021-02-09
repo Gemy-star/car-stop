@@ -12,6 +12,7 @@ import StartToday from "../StartToday";
 import Services from "../../components/Services";
 import Prepared from "../../components/Prepared";
 import Documents from "../../components/Documents";
+import Footer from "../../components/layouts/Footer";
 const Index = () => {
     const classes = useStyles();
     const theme = useTheme();
@@ -57,6 +58,7 @@ const Index = () => {
 <Services/>
 <Prepared/>
 <Documents/>
+<Footer/>
       </Grid>
     )
 }
