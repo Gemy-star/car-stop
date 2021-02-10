@@ -13,7 +13,7 @@ fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.71px',
 color: '#595f6f',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         margin:' 0 249px 30px 0',
 
 },
@@ -23,7 +23,7 @@ color: '#595f6f',
         position: 'absolute',
         width: '50%',
         left: '123%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display:'block',
             position: 'absolute',
             width: '100%',
@@ -145,7 +145,7 @@ backgroundColor: '#ec1c24',
         '&:hover': {
             backgroundColor: '#ec1c24',
         },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             margin:'50px 128px 0 129px',
 
         },

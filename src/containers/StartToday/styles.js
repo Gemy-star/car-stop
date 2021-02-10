@@ -7,8 +7,13 @@ export default makeStyles((theme) => ({
         display: 'flex',
         position: 'absolute',
         top: '192%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top:'180%'
+        },
+
+        [theme.breakpoints.only('sm')]: {
+            left:' 87%',
+            top: '199%'
         },
     },
     sellvideo_div: {
@@ -16,7 +21,7 @@ export default makeStyles((theme) => ({
         position: 'absolute',
         marginTop: '15%',
         right: '57%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: 'block',
             height: '12vh',
             marginTop: '46%',
@@ -33,7 +38,7 @@ export default makeStyles((theme) => ({
         position: 'absolute',
         marginTop: '7%',
         right: '63%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '365px',
             height: '12vh',
             marginTop: '13%',
@@ -41,7 +46,9 @@ export default makeStyles((theme) => ({
             position: 'absolute',
             top: '86%'
         },
-
+   [theme.breakpoints.only('sm')] : {
+       marginTop: '3%'
+   }
     },
     you_are: {
         width: '365px',

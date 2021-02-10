@@ -8,6 +8,9 @@ prepare_div:{
     width:'100%',
     height:'120vh',
     top:'429%',
+    [theme.breakpoints.only('sm')]:{
+        left: '102%'
+    }
 },
 get_prepared: {
     width:'421px',
@@ -22,7 +25,7 @@ lineHeight: '1.77',
 letterSpacing: '-0.73px',
 textAlign: 'center',
 color: '#000000',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         width: '421px',
         height: '62px',
         margin: '1px 180px 10px',
@@ -41,7 +44,7 @@ lineHeight: 'normal',
 letterSpacing: '-0.45px',
 textAlign: 'center',
 color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '269px',
             height: '24px',
             margin: '10px 77px 0 234px',
@@ -52,7 +55,7 @@ color: '#595f6f',
         position: 'absolute',
         top: '2%',
         right: '22%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top: '240%',
             left: '38%',
             right:'0'
@@ -71,7 +74,7 @@ fontStyle: 'normal',
 lineHeight:' 1.44',
 letterSpacing: '-0.5px',
 color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '377px',
             height: '26px',
             margin: '0 0 0 20px'
@@ -80,7 +83,11 @@ color: '#595f6f',
     list_mob:{
         position: 'absolute',
         top: '261%',
-        left: '67%'
+        left: '67%',
+        [theme.breakpoints.only('sm')]:{
+            top: '17%',
+            left: '10%'
+        }
     },
     list_dot:{
         color:' #ec1c24',

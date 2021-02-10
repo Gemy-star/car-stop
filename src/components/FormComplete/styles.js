@@ -11,7 +11,7 @@ backgroundColor: '#ffffff',
     left: '140%',
     position: 'absolute',
     top: '-9%',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         position: 'revert',
 
     },
@@ -46,7 +46,7 @@ backgroundColor: '#ffffff',
     left: '140%',
     position: 'absolute',
     top: '-9%',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         position: 'revert',
 
     },

@@ -10,19 +10,24 @@ export default makeStyles((theme) => ({
         position: 'absolute',
         display: 'block',
         top: '494%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: 'flex',
             top: '810%',
             width: '305%',
             height: '288px',
             margin: '88px 0',
         },
+        [theme.breakpoints.only('sm')]:{
+            top: '521%',
+            width: '292%',
+            height: '44vh'
+        }
     },
     bank_pos:{
         right: '21%',
         position: 'absolute',
         top: '41%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
           right:'14%'
         },
     },
@@ -43,7 +48,7 @@ fontStyle: 'normal',
 lineHeight: '1.44',
 letterSpacing: '-0.5px',
 color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '159px',
             height: '26px',
             margin:'0 0 16px 40px'
@@ -53,7 +58,7 @@ color: '#595f6f',
         right: '37%',
         top: '65%',
         position: 'absolute',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top:'52%'
         },
     },
@@ -70,10 +75,13 @@ lineHeight: 'normal',
 letterSpacing:'-0.36px',
 textAlign: 'center',
 color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '200px',
             height: '42px',
             margin: '0 40px',
+        },
+        [theme.breakpoints.only('sm')]: {
+            margin: '3px 214px 0 104px',
         },
     },
     required_mob:{
@@ -101,11 +109,14 @@ fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing: '-0.71px',
 color: '#000000',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '208px',
             height: '26px',
             margin: '12px 203px 23px 69px',
             whiteSpace: 'nowrap'
+        },
+        [theme.breakpoints.only('sm')]: {
+            margin: '19px 287px 23px 613px',
         },
 },
 emirates_id:{
@@ -120,7 +131,7 @@ fontStyle: 'normal',
 lineHeight: '1.44',
 letterSpacing: '-0.5px',
 color: '#595f6f',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         width: '87px',
         height: '26px',
         margin: '0 40px 16px 0',

@@ -15,10 +15,13 @@ export default makeStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.only('lg')]: {
             backgroundImage: `url(${bg_2x})`,
 },
-        [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('sm')]: {
+        width: ' 292%',
+    },
+        [theme.breakpoints.only('xs')]: {
             backgroundImage: `url(${bg})`,
             width: '105%',
             height: '5%',
@@ -45,7 +48,7 @@ lineHeight: 'normal',
 letterSpacing: '-0.73px',
 textAlign: 'center',
 color:' #ffffff',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width:' 389px',
             height: '46px',
             margin:' 0 0 10px',
@@ -72,6 +75,10 @@ color: '#ffffff'
         top: '90%',
         right:'31%',
         marginTop: '-6%',
+    [theme.breakpoints.only('sm')]: {
+        top: '98%',
+        right: '38%'
+    },
 
     },
     easier_ever:{
@@ -88,7 +95,7 @@ letterSpacing: '-0.52px',
 textAlign: 'center',
 color: '#ffffff'
         ,
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             fontSize: '25px',
             width:' 250px',
             height: '33px',
@@ -107,7 +114,11 @@ color: '#ffffff'
         position: 'absolute',
         top: '80%',
         right: '32%',
-        alignItems:'center'
+        alignItems:'center',
+        [theme.breakpoints.only('sm')]: {
+            top: '74%',
+            right:'38%'
+        },
     }
 
 }))
