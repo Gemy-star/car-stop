@@ -175,6 +175,9 @@ export default makeStyles((theme) => ({
             display: 'block',
             position: 'absolute',
             left: '23%'
+        },
+        [theme.breakpoints.only('sm')]: {
+            left: '24%'
         }
 
     },
@@ -214,6 +217,10 @@ backgroundColor: '#ffffff'
             backgroundColor: '#f6fbff',
             top: '520%',
             display: 'block',
+        },
+
+        [theme.breakpoints.only('sm')]: {
+            width: '291%'
         },
     },
     why_services: {

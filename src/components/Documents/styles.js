@@ -17,6 +17,11 @@ export default makeStyles((theme) => ({
             height: '288px',
             margin: '88px 0',
         },
+        [theme.breakpoints.only('sm')]:{
+            top: '521%',
+            width: '292%',
+            height: '44vh'
+        }
     },
     bank_pos:{
         right: '21%',
@@ -75,6 +80,9 @@ color: '#595f6f',
             height: '42px',
             margin: '0 40px',
         },
+        [theme.breakpoints.only('sm')]: {
+            margin: '3px 214px 0 104px',
+        },
     },
     required_mob:{
         right: '30%',
@@ -106,6 +114,9 @@ color: '#000000',
             height: '26px',
             margin: '12px 203px 23px 69px',
             whiteSpace: 'nowrap'
+        },
+        [theme.breakpoints.only('sm')]: {
+            margin: '19px 287px 23px 613px',
         },
 },
 emirates_id:{

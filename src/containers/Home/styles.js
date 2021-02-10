@@ -15,9 +15,8 @@ export default makeStyles((theme) => ({
         },
         [theme.breakpoints.only('sm')]: {
             width: ' 292%',
-            height: '822vh',
+            height: '653vh',
             backgroundColor: ' #ffffff',
-
         },
     },
     mob:{
@@ -39,6 +38,9 @@ export default makeStyles((theme) => ({
             right: '-79%',
             top: '165%',
             zIndex: '10',
+        },
+        [theme.breakpoints.only('sm')]: {
+            right: '-61%'
         },
     },
     start_today: {
@@ -84,6 +86,9 @@ export default makeStyles((theme) => ({
             height: '83vh',
             padding: '64px 271px 99px 182px',
         },
+    [theme.breakpoints.only('sm')]: {
+        padding: '141px 311px 126px 364px',
+    },
 
     },
     red_div: {
@@ -96,6 +101,11 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.only('lg')]: {
             backgroundImage: `url(${red_bg_2x})`,
         },
+    [theme.breakpoints.only('sm')]: {
+        padding : '262px 239px 282px 356px',
+        backgroundSize: 'cover',
+backgroundRepeat:'no-repeat'
+    },
         [theme.breakpoints.only('xs')]: {
             display: "block",
             width: '124%',

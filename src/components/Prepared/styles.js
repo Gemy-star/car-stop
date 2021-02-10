@@ -8,6 +8,9 @@ prepare_div:{
     width:'100%',
     height:'120vh',
     top:'429%',
+    [theme.breakpoints.only('sm')]:{
+        left: '102%'
+    }
 },
 get_prepared: {
     width:'421px',
@@ -80,7 +83,11 @@ color: '#595f6f',
     list_mob:{
         position: 'absolute',
         top: '261%',
-        left: '67%'
+        left: '67%',
+        [theme.breakpoints.only('sm')]:{
+            top: '17%',
+            left: '10%'
+        }
     },
     list_dot:{
         color:' #ec1c24',

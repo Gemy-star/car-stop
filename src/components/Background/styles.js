@@ -18,6 +18,9 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.only('lg')]: {
             backgroundImage: `url(${bg_2x})`,
 },
+    [theme.breakpoints.only('sm')]: {
+        width: ' 292%',
+    },
         [theme.breakpoints.only('xs')]: {
             backgroundImage: `url(${bg})`,
             width: '105%',
@@ -72,6 +75,10 @@ color: '#ffffff'
         top: '90%',
         right:'31%',
         marginTop: '-6%',
+    [theme.breakpoints.only('sm')]: {
+        top: '98%',
+        right: '38%'
+    },
 
     },
     easier_ever:{
@@ -107,7 +114,11 @@ color: '#ffffff'
         position: 'absolute',
         top: '80%',
         right: '32%',
-        alignItems:'center'
+        alignItems:'center',
+        [theme.breakpoints.only('sm')]: {
+            top: '74%',
+            right:'38%'
+        },
     }
 
 }))

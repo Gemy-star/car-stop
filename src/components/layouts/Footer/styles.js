@@ -13,6 +13,10 @@ footer_div:{
         top: '848%',
         height:'83vh',
     },
+    [theme.breakpoints.only('sm')]: {
+        top:' 605%'
+
+    },
 },
 logo_footer:{
     width: '290px',
@@ -59,6 +63,10 @@ color: '#595f6f',
             top: '20%',
             left: '-41%',
         },
+        [theme.breakpoints.only('sm')]: {
+            top: '35%',
+            left: '27%',
+        },
     },
     social_media:{
         position: 'absolute',
@@ -68,6 +76,9 @@ color: '#595f6f',
         [theme.breakpoints.only('xs')]: {
             top: '50%',
             right: '-6%',
+        },
+        [theme.breakpoints.only('sm')]: {
+            right: '-167%'
         },
     },
     twitter:{

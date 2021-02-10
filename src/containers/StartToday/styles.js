@@ -10,6 +10,11 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.only('xs')]: {
             top:'180%'
         },
+
+        [theme.breakpoints.only('sm')]: {
+            left:' 87%',
+            top: '199%'
+        },
     },
     sellvideo_div: {
         display: 'flex',
@@ -41,7 +46,9 @@ export default makeStyles((theme) => ({
             position: 'absolute',
             top: '86%'
         },
-
+   [theme.breakpoints.only('sm')] : {
+       marginTop: '3%'
+   }
     },
     you_are: {
         width: '365px',
