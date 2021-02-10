@@ -6,6 +6,7 @@ import VideoPlayer from 'react-simple-video-player';
 import Back from  '../../assets/backgrounds/red-luxury-sedan-road.jpg';
 import EA from '../../assets/Emirates Auction - We Can Reach You Anywhere.mp4';
 import PlayIcon from '../../assets/icons/play-icon.svg'
+import  './sellVideo.css' ;
 const SellVideo = props =>   {
     const classes = useStyles();
     const theme = useTheme();
