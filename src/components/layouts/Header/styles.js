@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
       display:'flex',
         justifyContent:'space-between',
 paddingRight: '12%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '100%',
             height: '22vh',
             paddingRight: '0',
@@ -19,7 +19,7 @@ paddingRight: '12%',
         height: '75px',
         margin: '7px 142px -24px 122px',
         objectFit: 'contain',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
 
         },
     },
@@ -32,7 +32,7 @@ paddingRight: '12%',
         '&:hover': {
             backgroundColor: '#ec1c24',
         },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '108px',
             height: '48px',
             backgroundColor: '#ec1c24',

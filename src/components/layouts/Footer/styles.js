@@ -8,7 +8,7 @@ footer_div:{
     top: '548%',
     width: '100%',
     height:'25vh',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
         left: '120%',
         top: '848%',
         height:'83vh',
@@ -19,7 +19,7 @@ logo_footer:{
     height: '72px',
     margin:'-2px 342px -14px 0',
     padding: '0 0 1px',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         width: '290px',
         height: '72px',
         margin: '12px 115px 21px 74px',
@@ -38,7 +38,7 @@ fontStyle: 'normal',
 lineHeight: '1.29',
 letterSpacing: 'normal',
 color: '#595f6f',
-     [theme.breakpoints.down('xs')]: {
+     [theme.breakpoints.only('xs')]: {
          width: '520px',
          height: '36px',
          margin: '10px 0',
@@ -55,7 +55,7 @@ color: '#595f6f',
         position: 'absolute',
         display: 'inline-block',
         left: '12%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top: '20%',
             left: '-41%',
         },
@@ -65,7 +65,7 @@ color: '#595f6f',
         display: 'block',
         right: '10%',
         top: '29%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top: '50%',
             right: '-6%',
         },
@@ -112,7 +112,7 @@ fontStyle: 'normal',
 lineHeight: 'normal',
 letterSpacing:'-0.44px',
 color: '#000000',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         width: '377px',
         height: '42px',
         margin: '30px 71px 30px 72px',

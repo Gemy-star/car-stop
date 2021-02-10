@@ -7,7 +7,7 @@ bid_ic:{
     height: '60px',
     margin: '0 231px 30px',
     objectFit: 'contain',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.only('xs')]: {
         width: '100%',
         height: '8vh',
         margin: '0 231px 30px',

@@ -6,7 +6,7 @@ export default makeStyles((theme) => ({
         position: 'absolute',
         top: '20%',
         right: '35%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top: '10%',
             right: '26%'
         },
@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
         lineHeight: 'normal',
         letterSpacing: '-0.5px',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '152px',
             height: '24px',
             margin: '0 119px 10px',
@@ -41,7 +41,7 @@ export default makeStyles((theme) => ({
         lineHeight: '1.29',
         letterSpacing: 'normal',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '390px',
             height: '54px',
             margin: '10px 0 0',
@@ -60,7 +60,7 @@ export default makeStyles((theme) => ({
         lineHeight: 'normal',
         letterSpacing: '-0.5px',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '125px',
             height: '24px',
             margin: '0 133px 10px 132px',
@@ -80,7 +80,7 @@ export default makeStyles((theme) => ({
         lineHeight: '1.29',
         letterSpacing: 'normal',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '390px',
             height: '54px',
             margin: '10px 0 0',
@@ -103,7 +103,7 @@ export default makeStyles((theme) => ({
         lineHeight: '1.29',
         letterSpacing: 'normal',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             margin: '0',
             width: '390px',
             height: '54px',
@@ -122,7 +122,7 @@ export default makeStyles((theme) => ({
         lineHeight: 'normal',
         letterSpacing: '-0.5px',
         color: '#595f6f',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             margin: '0 105px 10px',
             textAlign: 'center'
 
@@ -134,7 +134,7 @@ export default makeStyles((theme) => ({
         margin: '36px 30px 45px 0',
         objectFit: 'contain',
         color: '#ec1c24',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '50px',
             height: '48px',
             margin: '0 170px 10px',
@@ -147,7 +147,7 @@ export default makeStyles((theme) => ({
         margin: '35px 40px 62px 0',
         objectFit: 'contain',
         color: '#ec1c24',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width:'40px',
             height: '50px',
             margin: '0 175px 10px',
@@ -159,7 +159,7 @@ export default makeStyles((theme) => ({
         height: '50px',
         margin: '35px 30px 80px 0',
         objectFit: 'contain',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '50px',
             height: '50px',
             margin: '0 170px 10px',
@@ -170,7 +170,7 @@ export default makeStyles((theme) => ({
         display: 'flex',
         position: 'absolute',
         top: '47%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             top: '24%',
             display: 'block',
             position: 'absolute',
@@ -187,7 +187,7 @@ export default makeStyles((theme) => ({
         borderRadius: '5px',
         border: 'solid 1px #dddfe7',
         backgroundColor: '#ffffff',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: '560px',
             height: '248px',
             margin: '0 0 30px',
@@ -206,7 +206,7 @@ backgroundColor: '#ffffff'
         position: 'absolute',
         top: '311%',
         display: 'flex',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: ' 295%',
             height: '176vh',
             margin: '100px 0',

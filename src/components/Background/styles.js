@@ -15,10 +15,10 @@ export default makeStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.only('lg')]: {
             backgroundImage: `url(${bg_2x})`,
 },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             backgroundImage: `url(${bg})`,
             width: '105%',
             height: '5%',
@@ -45,7 +45,7 @@ lineHeight: 'normal',
 letterSpacing: '-0.73px',
 textAlign: 'center',
 color:' #ffffff',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width:' 389px',
             height: '46px',
             margin:' 0 0 10px',
@@ -88,7 +88,7 @@ letterSpacing: '-0.52px',
 textAlign: 'center',
 color: '#ffffff'
         ,
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             fontSize: '25px',
             width:' 250px',
             height: '33px',

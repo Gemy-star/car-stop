@@ -8,12 +8,12 @@ export default makeStyles((theme) => ({
         height: '591vh',
         padding: '30px 0 100px',
         backgroundColor: ' #ffffff',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             width: ' 313%',
             height: '850vh',
             backgroundColor: ' #ffffff',
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.only('sm')]: {
             width: ' 292%',
             height: '822vh',
             backgroundColor: ' #ffffff',
@@ -33,7 +33,7 @@ export default makeStyles((theme) => ({
         top: '95%',
         overflow: 'revert',
         zIndex: '10',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: 'flex',
             position: 'absolute',
             right: '-79%',
@@ -59,7 +59,7 @@ export default makeStyles((theme) => ({
         display: "flex",
         position:' absolute',
         top:' 97%',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: "block",
             height: '132vh',
             width: '100%',
@@ -78,7 +78,7 @@ export default makeStyles((theme) => ({
         height: '703px',
         padding: '141px 107px 116px 145px',
         backgroundColor: '#323e47',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: "block",
             width: '124%',
             height: '83vh',
@@ -93,10 +93,10 @@ export default makeStyles((theme) => ({
         height: '703px',
         padding: '262px 107px 282px 183px',
         objectFit: 'contain',
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.only('lg')]: {
             backgroundImage: `url(${red_bg_2x})`,
         },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.only('xs')]: {
             display: "block",
             width: '124%',
             height: '49vh',
