@@ -253,4 +253,4 @@ backgroundColor: '#ffffff'
         textAlign: 'center',
         color: '#595f6f'
     },
-}));
+}), {index: 1});

@@ -47,6 +47,6 @@ letterSpacing:'-0.42px',
 textAlign: 'center',
 color: '#ffffff'    }
 
-}))
+}), {index: 1})
 
 

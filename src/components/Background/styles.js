@@ -121,4 +121,4 @@ color: '#ffffff'
         },
     }
 
-}))
+}), {index: 1})

@@ -53,4 +53,4 @@ paddingRight: '12%',
     },
 
 
-}))
+}), {index: 1})

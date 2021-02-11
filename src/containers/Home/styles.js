@@ -112,4 +112,4 @@ backgroundRepeat:'no-repeat'
             height: '49vh',
         },
     }
-}))
+}), {index: 1})

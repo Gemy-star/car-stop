@@ -163,4 +163,4 @@ letterSpacing: 'normal',
 color: '#ffffff',
 whiteSpace: 'nowrap'
 }
-}))
+}), {index: 1})
